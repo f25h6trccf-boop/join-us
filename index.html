@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#020503">
+  <title>FLOCK // SIGNAL ONLINE</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <canvas id="network"></canvas>
+  <div class="bg-grid"></div>
+  <div class="scanbar"></div>
+  <div class="scanlines"></div>
+
+  <section class="boot" id="boot">
+    <div class="bootbox">
+      <div class="boottitle">FLOCK OS // SECURE BOOT</div>
+      <div id="bootText"></div>
+      <div class="progress"><i id="progress"></i></div>
+    </div>
+  </section>
+
+  <div class="wrap" id="tapZone">
+    <div class="topbar">
+      <span>[ FLOCK OS v2.41 ]</span>
+      <span>USER: ANONYMOUS</span>
+      <span>SESSION: <b id="session"></b></span>
+      <span>ENCRYPTION: ACTIVE</span>
+    </div>
+
+    <section class="hero">
+      <aside class="panel side">
+        <div class="logo">FLOCK<small>LIBERATE. PRIVACY. FREEDOM.</small></div>
+        <div class="label top-space">// WHAT WE DO</div>
+        <div class="dim">We document. We expose. We liberate.<br><br>Communities deserve privacy without being watched.</div>
+        <div class="label mid-space">// SYSTEM STATUS</div>
+        <div class="terminal">NETWORK: ONLINE
+NODES: 1327
+UPLINK: SECURE
+THREAT: THEIRS</div>
+      </aside>
+
+      <main class="panel main">
+        <div class="windowbar"><i class="dot"></i><i class="dot"></i><i class="dot"></i><span>TERMINAL // FLOCK OS</span></div>
+        <div class="status">&gt; STATUS: ONLINE</div>
+        <div class="message">IF YOU FOUND THIS,<br>YOU WERE MEANT TO.</div>
+        <div class="join">JOIN US</div>
+        <div class="sig">⌖</div>
+        <div class="tapHint">TAP ANYWHERE // HIDDEN NODES ACTIVE</div>
+        <div class="controls">
+          <button class="ctrl" id="soundBtn">SOUND: OFF</button>
+          <button class="ctrl" id="signalBtn">PING NETWORK</button>
+        </div>
+      </main>
+
+      <aside class="panel side">
+        <div class="label">// NETWORK</div>
+        <div class="dim">LIVE NODES</div>
+        <div class="bigNumber" id="nodeCount">1327</div>
+        <div class="label mid-space">// NODE ACTIVITY</div>
+        <div class="terminal">NODE_0132  ONLINE
+NODE_0133  ONLINE
+NODE_0134  ACTIVE
+NODE_0135  ONLINE</div>
+        <div class="label mid-space">// SIGNAL</div>
+        <div class="feed"></div>
+      </aside>
+    </section>
+
+    <section class="grid">
+      <div class="panel card">
+        <div class="label">// LIVE FEED</div>
+        <div class="feed"></div>
+        <div class="dim feed-copy">SIMULATED CAMERA NETWORK<br>STATUS: DETECTED</div>
+      </div>
+
+      <div class="panel card">
+        <div class="label">// OUR MISSION</div>
+        <div class="terminal">EXPOSE  — surveillance overreach
+PROTECT — privacy and freedom
+EMPOWER — communities together
+LIBERATE — public spaces from control</div>
+      </div>
+
+      <div class="panel card">
+        <div class="label">// TERMINAL</div>
+        <div class="terminal" id="typed"></div>
+      </div>
+    </section>
+
+    <div class="footer">THEY WATCH. WE SEE. WE LIBERATE. // EVERYWHERE.</div>
+  </div>
+
+  <div class="easter" id="egg3">
+    <div class="secret">
+      <h2>/* NODE 03 UNLOCKED */</h2>
+      <p>THE SIGNAL IS STRONGER WITH YOU.</p>
+      <p class="green">STAY CURIOUS. STAY FREE.</p>
+      <button onclick="closeEgg('egg3')">RETURN TO NETWORK</button>
+    </div>
+  </div>
+
+  <div class="easter" id="egg5">
+    <div class="secret">
+      <h2>/* NODE 05 UNLOCKED */</h2>
+      <p>YOU ARE NOT JUST WATCHING THE SYSTEM.</p>
+      <p class="green">YOU ARE LEARNING TO SEE IT.</p>
+      <button onclick="closeEgg('egg5')">RETURN TO NETWORK</button>
+    </div>
+  </div>
+
+  <div class="easter" id="egg10">
+    <div class="secret red">
+      <h2>ROOT ACCESS GRANTED</h2>
+      <p>FINAL HIDDEN NODE FOUND.</p>
+      <p>THE NETWORK REMEMBERS.</p>
+      <button onclick="closeEgg('egg10')">DISCONNECT</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
